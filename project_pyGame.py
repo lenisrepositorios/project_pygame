@@ -15,8 +15,8 @@ blanco = (255, 255, 255)
 
 fuente = pygame.font.SysFont(None, 40)
 reloj = pygame.time.Clock()
-imagen_player = pygame.image.load("player.png")
-imagen_meta = pygame.image.load("flag.png")
+imagen_player = pygame.image.load("imagenes/player.png")
+imagen_meta = pygame.image.load("imagenes/flag.png")
 
 def texto_centrado(texto, y):
     t = fuente.render(texto, True, negro)
@@ -91,17 +91,17 @@ def jugar_nivel(n):
 
     #Obstáculos y enemigos por nivel
     if n == 1:
-        imagen_enemigo = pygame.image.load("enemigo1.png")
+        imagen_enemigo = pygame.image.load("imagenes/enemigo1.png")
         obstaculos = [pygame.Rect(200, 150, 100, 20), pygame.Rect(400, 300, 150, 20)]
         enemigos = [pygame.Rect(300, 100, 40, 40)]
         direcciones = [1]
     elif n == 2:
-        imagen_enemigo = pygame.image.load("enemigo2.png")
+        imagen_enemigo = pygame.image.load("imagenes/enemigo2.png")
         obstaculos = [pygame.Rect(50, 200, 300, 20), pygame.Rect(300, 400, 150, 20), pygame.Rect(600, 250, 100, 20)]
         enemigos = [pygame.Rect(500, 100, 40, 40), pygame.Rect(200, 350, 40, 40)]
         direcciones = [1, -1]
     elif n == 3:
-        imagen_enemigo = pygame.image.load("enemigo3.png")
+        imagen_enemigo = pygame.image.load("imagenes/enemigo3.png")
         obstaculos = [pygame.Rect(150, 100, 100, 20), pygame.Rect(400, 200, 150, 20), pygame.Rect(250, 350, 200, 20), 
                       pygame.Rect(500, 450, 100, 20), pygame.Rect(500, 450, 20, 120)]
         enemigos = [pygame.Rect(100, 300, 40, 40), pygame.Rect(600, 400, 40, 40), pygame.Rect(350, 100, 40, 40)]
